@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    /* display: flex;
+    justify-content: center; */
+    padding: 50px;
+}
+
+.container {
+    width: 700px;
+    height: 650px;
+    border-radius: 10;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+        0 2.2px 3.9px -4px rgba(0, 0, 0, 0.095),
+        0 5px 31px -4px rgba(0, 0, 0, 0.19)
+        ;
+    overflow: hidden;
+}
+
+.side-nav{
+    height: 650px;
+    width: 300px;
+    background-color: rgb(238, 238, 238);
+    display: inline-block;
+    vertical-align: top;
+}
+.side-nav header{
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(241, 244, 245);
+}
+.side-nav header img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+.side-nav header div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.side-nav ul{
+    height: 530px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow-y: auto;
+}
+.side-nav ul li{
+    padding: 10px;
+    vertical-align: top;
+    background-color: aliceblue;
+}
+.side-nav ul li div{
+    display: inline-block;
+}
+.side-nav ul li img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.side-nav ul li .user-name{
+    display: inline-block;
+}
+.side-nav ul li .user-email{
+    font-style: italic;
+}
+
+.status{
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    position: absolute;
+    
+}
+.success{
+    background-color: rgb(94, 187, 85);
+}
+.warning{
+    background-color: #d8a776;
+}
+
+.main{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(241, 244, 245);
+}
+.main header .main-title{
+    text-align: center;
+}
+.main .chat-area{
+    border-radius: 10px;
+    /* background-color: rgb(242, 245, 248); */
+    /* width: 100%; */
+    height: 450px;
+    margin: 10px;
+    overflow-y: scroll;
+    
+}
+.received-item{
+    margin: 5px;
+    padding-right: 50px;
+    text-align: left;
+}
+.received-item .msg{
+    border-radius: 20px;
+    background-color: rgb(217, 218, 219);
+    padding: 15px;
+}
+.received-item .time{
+    font-size: small;
+    margin-left: 10px;
+}
+
+.sent-item{
+    margin: 5px;
+    text-align: right;
+    padding-left: 50px;
+    text-align: right;
+}
+.sent-item .msg{
+    border-radius: 20px;
+    background-color: rgb(123, 205, 238);
+    padding: 15px;
+    margin: 0 auto;
+    margin-left: auto;
+    text-align: right;
+    padding-left: 10px;
+}
+.sent-item .time{
+    font-size: small;
+    margin-right: 10px;
+}
+
+.message-input-area{
+    background-color: rgb(241, 242, 243);
+    padding: 10px;
+}
+.message-input-area .msg-input{
+    border-width: 0;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+.message-input-area div{
+    display: inline-block;
+}
+.message-input-area button{
+    display: inline-block;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+}
+.message-input-area button:hover{
+    background-color: aliceblue;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+.dashboard .title{
+    margin: 10px;
+    font-size: large;
+}
+.app-title{
+    font-style: italic;
+    color: #6295be;
+    
+}
+.btn{
+    border-width: 0;
+    border-radius: 2px;
+    padding: 10px 40px 10px 40px;
+    margin: 10px;
+}
+.btn-primary{
+    background: #3498db;
+    color: #fff;
+    font-size: medium;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.btn-primary:hover{
+    background: #3cb0fd;
+}
+.btn-light{
+    background: #edeff0;
+    color: rgb(15, 14, 14);
+    font-size: medium;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.btn-light:hover{
+    background: #d8dbdd;
+}
+
+.logout-btn{
+    border-width: 0;
+    background-color: #e8edf0;
+    box-shadow: 0px 1px 3px #666666;
+    float: right;
+    margin: 10px;
+}
+.logout-btn{
+    box-shadow: 0px 1px 1px #666666;
+}
